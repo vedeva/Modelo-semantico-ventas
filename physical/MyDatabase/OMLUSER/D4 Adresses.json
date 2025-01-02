@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "D4 Adresses",
+    "sourceTable" : "physicalTable:MyDatabase.OMLUSER.SAMP_ADDRESSES_D",
+    "overrideSourceCacheSetting" : false
+  }
+}

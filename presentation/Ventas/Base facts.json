@@ -1,0 +1,12 @@
+{
+  "presentationTable" : {
+    "name" : "Base facts",
+    "presentationColumns" : [ {
+      "name" : "Revenue",
+      "sourceLogicalColumn" : "logicalColumn:Ventas_BM.F1 Revenue.Revenue"
+    }, {
+      "name" : "Units",
+      "sourceLogicalColumn" : "logicalColumn:Ventas_BM.F1 Revenue.Units"
+    } ]
+  }
+}

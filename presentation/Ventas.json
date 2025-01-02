@@ -1,0 +1,15 @@
+{
+  "subjectArea" : {
+    "name" : "Ventas",
+    "sourceBusinessModel" : "businessModel:Ventas_BM",
+    "tableOrder" : [ {
+      "name" : "presentationTable:Ventas.Time"
+    }, {
+      "name" : "presentationTable:Ventas.Products"
+    }, {
+      "name" : "presentationTable:Ventas.Customers"
+    }, {
+      "name" : "presentationTable:Ventas.Base facts"
+    } ]
+  }
+}

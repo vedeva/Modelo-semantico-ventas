@@ -1,0 +1,35 @@
+{
+  "physicalTable" : {
+    "name" : "F1 Revenue",
+    "sourceTable" : "physicalTable:MyDatabase.OMLUSER.SAMP_REVENUE_F",
+    "overrideSourceCacheSetting" : false,
+    "joins" : [ {
+      "rightTable" : "physicalTable:MyDatabase.OMLUSER.D1 Time",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.OMLUSER.F1 Revenue.BILL_DAY_DT",
+        "rightColumn" : "physicalColumn:MyDatabase.OMLUSER.D1 Time.CALENDAR_DATE"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:MyDatabase.OMLUSER.D2 Products",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.OMLUSER.F1 Revenue.PROD_KEY",
+        "rightColumn" : "physicalColumn:MyDatabase.OMLUSER.D2 Products.PROD_KEY"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:MyDatabase.OMLUSER.D3 Customers",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.OMLUSER.F1 Revenue.CUST_KEY",
+        "rightColumn" : "physicalColumn:MyDatabase.OMLUSER.D3 Customers.CUST_KEY"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}
